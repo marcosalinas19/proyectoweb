@@ -1,0 +1,55 @@
+---
+import './styles.css';
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos Premium</title>
+</head>
+<body>
+    <header>
+        <div class="logo">AntoTube</div>
+        <input type="text" placeholder="Buscar">
+        <button id="searchButton">Buscar</button>
+        <div class="cart">
+            
+            <ul id="cartItems">
+                <!-- Items del carrito serán añadidos aquí -->
+            </ul>
+            <button id="checkoutButton"></button>
+        </div>
+
+    </header>
+    <div class="container">
+        <main>
+            <h2>Videos Premium</h2>
+            <ul class="premium-videos">
+                <li>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sample_video_1" frameborder="0" allowfullscreen></iframe>
+                    <p>Video Premium 1 - $10</p>
+                    <button onclick="addToCart('Video Premium 1')">Añadir al Carrito</button>
+                </li>
+                <li>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sample_video_2" frameborder="0" allowfullscreen></iframe>
+                    <p>Video Premium 2 - $15</p>
+                    <button onclick="addToCart('Video Premium 2')">Añadir al Carrito</button>
+                </li>
+                <li>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sample_video_3" frameborder="0" allowfullscreen></iframe>
+                    <p>Serie Premium 1 - $30</p>
+                    <button onclick="addToCart('Serie Premium 1')">Añadir al Carrito</button>
+                </li>
+                <li>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sample_video_4" frameborder="0" allowfullscreen></iframe>
+                    <p>Serie Premium 2 - $40</p>
+                    <button onclick="addToCart('Serie Premium 2')">Añadir al Carrito</button>
+                </li>
+            </ul>
+        </main>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

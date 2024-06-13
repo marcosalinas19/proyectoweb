@@ -1,0 +1,58 @@
+---
+import './styles.css';
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de YouTube</title>
+</head>
+<body>
+    <header>
+        <div class="logo">AntoTube</div>
+        <input type="text" placeholder="Buscar">
+        <button id="searchButton">Buscar</button>
+        <div class="cart">
+            
+            <ul id="cartItems">
+                <!-- Items del carrito serán añadidos aquí -->
+            </ul>
+            <button id="checkoutButton"></button>
+        </div>
+    </header>
+    <div class="container">
+        <main>
+            <section class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SfHBhdMmYPY?si=pxB14j21kQRVBT9G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+            <section class="comments">
+                <h2>Comentarios</h2>
+                <div id="commentSection"></div>
+                <textarea id="commentInput" placeholder="Añadir un comentario"></textarea>
+                <button id="addCommentButton">Comentar</button>
+            </section>
+            <section class="elogios">
+                <h2>Elogios</h2>
+                <div id="elogioSection"></div>
+                <textarea id="elogioInput" placeholder="Añadir un elogio"></textarea>
+                <button id="addElogioButton">Elogiar</button>
+            </section>
+        </main>
+        <aside class="sidebar">
+            <h2>Videos sugeridos</h2>
+            <ul id="videoList">
+                <iframe width="300" height="150" src="https://www.youtube.com/embed/U_LlX4t0A9I?si=iCsBDiACy4cmhfG4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <br><br>
+                <iframe width="300" height="150" src="https://www.youtube.com/embed/2cHn8LtrGWg?si=D8hEem1UOf14B2eS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <br><br>
+                <iframe width="300" height="150" src="https://www.youtube.com/embed/W56Ggzb26so?si=5jREbyxG_fzswTWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <br><br>
+                <iframe width="300" height="150" src="https://www.youtube.com/embed/W56Ggzb26so?si=5jREbyxG_fzswTWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </ul>
+        </aside>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
